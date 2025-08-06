@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_main_banner",
+  "info": {
+    "displayName": "Баннер"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Добро пожаловать в Hukali Village"
+    },
+    "description": {
+      "type": "text"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "videos"
+      ]
+    }
+  },
+  "config": {}
+}

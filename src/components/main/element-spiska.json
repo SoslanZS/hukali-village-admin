@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_main_element_spiska",
+  "info": {
+    "displayName": "Элемент списка"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

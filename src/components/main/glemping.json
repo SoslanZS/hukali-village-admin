@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_main_glemping",
+  "info": {
+    "displayName": "Глэмпинг"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Глэмпинг над облаками",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "mains",
+  "info": {
+    "singularName": "main",
+    "pluralName": "mains",
+    "displayName": "Main"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "main.banner",
+      "repeatable": false,
+      "required": true
+    },
+    "glamping": {
+      "type": "component",
+      "component": "main.glemping",
+      "repeatable": false
+    },
+    "our_ohoms": {
+      "type": "component",
+      "component": "main.nashi-nomera",
+      "repeatable": false
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "lessons": {
+      "type": "component",
+      "component": "main.chem-zanyatsya",
+      "repeatable": false
+    },
+    "questions": {
+      "type": "component",
+      "component": "main.chasto-zadavaemye-voprosy",
+      "repeatable": false
+    }
+  }
+}

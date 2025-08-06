@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_main_chasto_zadavaemye_voprosy",
+  "info": {
+    "displayName": "Часто задаваемые вопросы"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Часто задаваемые вопросы"
+    },
+    "list_item": {
+      "type": "component",
+      "component": "main.element-spiska",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_main_chem_zanyatsya_s",
+  "info": {
+    "displayName": "Чем занятся?"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Чем заняться?"
+    },
+    "description": {
+      "type": "text"
+    },
+    "list_item": {
+      "type": "component",
+      "component": "main.element-spiska",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
