@@ -427,7 +427,7 @@ export interface ApiSeoSeo extends Struct.SingleTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::seo.seo'> &
       Schema.Attribute.Private;
-    pricePerNight: Schema.Attribute.Integer;
+    pricePerNight: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     shareImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'

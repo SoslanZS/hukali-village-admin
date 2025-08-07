@@ -25,7 +25,7 @@
       "type": "string"
     },
     "pricePerNight": {
-      "type": "integer"
+      "type": "string"
     },
     "shareImage": {
       "type": "media",

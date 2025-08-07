@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-08-07T07:38:43.798Z"
+    "x-generation-date": "2025-08-07T20:06:38.700Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -3183,7 +3183,7 @@
                 "type": "string"
               },
               "pricePerNight": {
-                "type": "integer"
+                "type": "string"
               },
               "shareImage": {
                 "oneOf": [
@@ -3275,7 +3275,7 @@
             "type": "string"
           },
           "pricePerNight": {
-            "type": "integer"
+            "type": "string"
           },
           "shareImage": {
             "type": "object",
@@ -3933,7 +3933,7 @@
                   "type": "string"
                 },
                 "pricePerNight": {
-                  "type": "integer"
+                  "type": "string"
                 },
                 "shareImage": {
                   "type": "object",
