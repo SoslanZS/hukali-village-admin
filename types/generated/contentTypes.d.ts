@@ -407,6 +407,41 @@ export interface ApiMainMain extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiSeoSeo extends Struct.SingleTypeSchema {
+  collectionName: 'seos';
+  info: {
+    displayName: 'SEO';
+    pluralName: 'seos';
+    singularName: 'seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Hukali Village \u2014 \u0443\u044E\u0442\u043D\u044B\u0439 \u0433\u043B\u044D\u043C\u043F\u0438\u043D\u0433 \u0432 \u0421\u0435\u0432\u0435\u0440\u043D\u043E\u0439 \u041E\u0441\u0435\u0442\u0438\u0438. \u0414\u043E\u043C\u0438\u043A\u0438 \u0441 \u043F\u0430\u043D\u043E\u0440\u0430\u043C\u043D\u044B\u043C \u0432\u0438\u0434\u043E\u043C, \u0447\u0438\u0441\u0442\u044B\u0439 \u0432\u043E\u0437\u0434\u0443\u0445, \u0433\u043E\u0440\u044B, \u0431\u0440\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043E\u043D\u043B\u0430\u0439\u043D \u0447\u0435\u0440\u0435\u0437 Bnovo.'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::seo.seo'> &
+      Schema.Attribute.Private;
+    pricePerNight: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    shareImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    telephone: Schema.Attribute.String;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'\u0413\u043B\u044D\u043C\u043F\u0438\u043D\u0433 Hukali Village \u2014 \u0434\u043E\u043C\u0438\u043A\u0438 \u0432 \u0421\u0435\u0432\u0435\u0440\u043D\u043E\u0439 \u041E\u0441\u0435\u0442\u0438\u0438 \u0443 \u043F\u043E\u0434\u043D\u043E\u0436\u0438\u044F \u041A\u0430\u0432\u043A\u0430\u0437\u0430'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -917,6 +952,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::main.main': ApiMainMain;
+      'api::seo.seo': ApiSeoSeo;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

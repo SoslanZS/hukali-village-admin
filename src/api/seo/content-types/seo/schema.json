@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "seos",
+  "info": {
+    "singularName": "seo",
+    "pluralName": "seos",
+    "displayName": "SEO"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Глэмпинг Hukali Village — домики в Северной Осетии у подножия Кавказа",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "default": "Hukali Village — уютный глэмпинг в Северной Осетии. Домики с панорамным видом, чистый воздух, горы, бронирование онлайн через Bnovo.",
+      "required": true
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "pricePerNight": {
+      "type": "integer"
+    },
+    "shareImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
